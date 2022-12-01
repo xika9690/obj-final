@@ -18,18 +18,18 @@ Adafruit_NeoPixel strip3 = Adafruit_NeoPixel(1, PIN3, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip4 = Adafruit_NeoPixel(1, PIN4, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip5 = Adafruit_NeoPixel(1, PIN4, NEO_GRB + NEO_KHZ800);
 
-//pin 2 is SEND pin - common for all
-CapacitiveSensor cs_2_3 = CapacitiveSensor(2, 3);
-CapacitiveSensor cs_2_4 = CapacitiveSensor(2, 4);
-CapacitiveSensor cs_2_5 = CapacitiveSensor(2, 5);
-CapacitiveSensor cs_2_6 = CapacitiveSensor(2, 6);
+//pin 2 is SEND pin - common for all | cs_commonPin#_touchPin
+CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52);
+CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53);
+CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50);
+CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51);
 
 // variables
 int ledPin1 =  42; // the number of the LED pin
 int ledPin2 =  38; // the number of the LED pin
 int ledPin3 =  34; // the number of the LED pin
 int ledPin4 =  30; // the number of the LED pin
-int ledPin5 =  13; // the number of the LED pin
+//int ledPin5 =  13; // the number of the LED pin
 //int potPin = A6; // brightness
 //int potVal = 0; // save the value of potentiometer
 //int potPin2 = A4; // color mode
@@ -57,15 +57,15 @@ void setup() {
 }
 
 void loop() {
-  // sensor stuff cs_commonPin#_touchPin
+  // sensor stuff cs_commonPin#_touchPin#
   long capSense1 =  cs_2_52.capacitiveSensor(30);
   long capSense2 =  cs_2_53.capacitiveSensor(30);
   long capSense3 =  cs_2_50.capacitiveSensor(30);
   long capSense4 =  cs_2_51.capacitiveSensor(30);
-  long capSense1 =  cs_2_7.capacitiveSensor(30);
-  long capSense2 =  cs_2_8.capacitiveSensor(30);
-  long capSense3 =  cs_2_9.capacitiveSensor(30);
-  long capSense4 =  cs_2_10.capacitiveSensor(30);
+//  long capSense1 =  cs_2_7.capacitiveSensor(30);
+//  long capSense2 =  cs_2_8.capacitiveSensor(30);
+//  long capSense3 =  cs_2_9.capacitiveSensor(30);
+//  long capSense4 =  cs_2_10.capacitiveSensor(30);
 
   // LED stuff
   if(capSense1 > 100) {

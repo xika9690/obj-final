@@ -6,17 +6,18 @@
 #endif
 
 //define the digital pin that the LED strip is connected to
-#define PIN1 10
-#define PIN2 11
-#define PIN3 12
-#define PIN4 13
+#define PIN1 42
+#define PIN2 38
+#define PIN3 34
+#define PIN4 30
+//#define PIN5 13
 
 //the first parameter is the number of LEDs you have - change for your strip
 Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(1, PIN1, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(1, PIN2, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip3 = Adafruit_NeoPixel(1, PIN3, NEO_GRB + NEO_KHZ800);
 Adafruit_NeoPixel strip4 = Adafruit_NeoPixel(1, PIN4, NEO_GRB + NEO_KHZ800);
-Adafruit_NeoPixel strip5 = Adafruit_NeoPixel(1, PIN4, NEO_GRB + NEO_KHZ800);
+//Adafruit_NeoPixel strip5 = Adafruit_NeoPixel(1, PIN5, NEO_GRB + NEO_KHZ800);
 
 //pin 2 is SEND pin - common for all | cs_commonPin#_touchPin
 CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52);
@@ -42,6 +43,7 @@ void setup() {
   pinMode(ledPin2, OUTPUT);
   pinMode(ledPin3, OUTPUT);
   pinMode(ledPin4, OUTPUT);
+  pinMode(ledPin5, OUTPUT);
 
   strip1.begin(); //we always need to do this
   strip1.show(); // Initialize all pixels to 'off'
@@ -62,6 +64,28 @@ void loop() {
   long capSense2 =  cs_2_53.capacitiveSensor(30);
   long capSense3 =  cs_2_50.capacitiveSensor(30);
   long capSense4 =  cs_2_51.capacitiveSensor(30);
+//  long capSense5 =  cs_2_3.capacitiveSensor(30);
+//  long capSense6 =  cs_2_4.capacitiveSensor(30);
+//  long capSense7 =  cs_2_5.capacitiveSensor(30);
+//  long capSense8 =  cs_2_6.capacitiveSensor(30);
+//  long capSense9 =  cs_2_3.capacitiveSensor(30);
+//  long capSense10 =  cs_2_4.capacitiveSensor(30);
+//  long capSense11 =  cs_2_5.capacitiveSensor(30);
+//  long capSense12 =  cs_2_6.capacitiveSensor(30);
+//  long capSense13 =  cs_2_3.capacitiveSensor(30);
+//  long capSense14 =  cs_2_4.capacitiveSensor(30);
+//  long capSense15 =  cs_2_5.capacitiveSensor(30);
+//  long capSense16 =  cs_2_6.capacitiveSensor(30);
+//  long capSense17 =  cs_2_3.capacitiveSensor(30);
+//  long capSense18 =  cs_2_4.capacitiveSensor(30);
+//  long capSense19 =  cs_2_5.capacitiveSensor(30);
+//  long capSense20 =  cs_2_6.capacitiveSensor(30);
+//  long capSense21 =  cs_2_3.capacitiveSensor(30);
+//  long capSense22 =  cs_2_4.capacitiveSensor(30);
+//  long capSense23 =  cs_2_5.capacitiveSensor(30);
+//  long capSense24 =  cs_2_6.capacitiveSensor(30);
+//  long capSense25 =  cs_2_6.capacitiveSensor(30);
+
 //  long capSense1 =  cs_2_7.capacitiveSensor(30);
 //  long capSense2 =  cs_2_8.capacitiveSensor(30);
 //  long capSense3 =  cs_2_9.capacitiveSensor(30);

@@ -7,74 +7,68 @@
 
 //define the digital pin that the LED strip is connected to
 #define PIN1 42
-#define PIN2 38
-#define PIN3 34
-#define PIN4 30
+//#define PIN2 38
+//#define PIN3 34
+//#define PIN4 30
 //#define PIN5 13
 
 //the first parameter is the number of LEDs you have - change for your strip
-Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(1, PIN1, NEO_GRB + NEO_KHZ800); // r1
-Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(1, PIN2, NEO_GRB + NEO_KHZ800); // r2
-Adafruit_NeoPixel strip3 = Adafruit_NeoPixel(1, PIN3, NEO_GRB + NEO_KHZ800); // r3
-Adafruit_NeoPixel strip4 = Adafruit_NeoPixel(1, PIN4, NEO_GRB + NEO_KHZ800); // r4
+Adafruit_NeoPixel strip1 = Adafruit_NeoPixel(15, PIN1, NEO_GRB + NEO_KHZ800); // r1
+//Adafruit_NeoPixel strip2 = Adafruit_NeoPixel(1, PIN2, NEO_GRB + NEO_KHZ800); // r2
+//Adafruit_NeoPixel strip3 = Adafruit_NeoPixel(1, PIN3, NEO_GRB + NEO_KHZ800); // r3
+//Adafruit_NeoPixel strip4 = Adafruit_NeoPixel(1, PIN4, NEO_GRB + NEO_KHZ800); // r4
 //Adafruit_NeoPixel strip5 = Adafruit_NeoPixel(1, PIN5, NEO_GRB + NEO_KHZ800); // r5
 
 //pin 2 is SEND pin - common for all | cs_commonPin#_touchPin
-CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52); // r1c1
-CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53); // r1c2
-CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50); // r1c3
-CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r1c4
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r1c5
-//CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52); // r2c1
-//CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53); // r2c2
-//CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50); // r2c3
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r2c4
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r2c5
-//CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52); // r3c1
-//CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53); // r3c2
-//CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50); // r3c3
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r3c4
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r3c5
-//CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52); // r4c1
-//CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53); // r4c2
-//CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50); // r4c3
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r4c4
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r4c5
-//CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52); // r5c1
-//CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53); // r5c2
-//CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50); // r5c3
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r5c4
-//CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51); // r5c5
+CapacitiveSensor cs_2_52 = CapacitiveSensor(2, 52);
+CapacitiveSensor cs_2_53 = CapacitiveSensor(2, 53);
+CapacitiveSensor cs_2_50 = CapacitiveSensor(2, 50);
+CapacitiveSensor cs_2_51 = CapacitiveSensor(2, 51);
+CapacitiveSensor cs_3_48 = CapacitiveSensor(3, 48);
+CapacitiveSensor cs_3_49 = CapacitiveSensor(3, 49);
+CapacitiveSensor cs_3_46 = CapacitiveSensor(3, 46);
+CapacitiveSensor cs_3_47 = CapacitiveSensor(3, 47);
+CapacitiveSensor cs_4_44 = CapacitiveSensor(4, 44);
+CapacitiveSensor cs_4_45 = CapacitiveSensor(4, 45);
+CapacitiveSensor cs_4_42 = CapacitiveSensor(4, 42);
+CapacitiveSensor cs_4_43 = CapacitiveSensor(4, 43);
+CapacitiveSensor cs_5_40 = CapacitiveSensor(5, 40);
+//CapacitiveSensor cs_6_51 = CapacitiveSensor(6, 51);
+//CapacitiveSensor cs_6_51 = CapacitiveSensor(6, 51);
+//CapacitiveSensor cs_6_52 = CapacitiveSensor(6, 52);
+//CapacitiveSensor cs_6_53 = CapacitiveSensor(6, 53);
+//CapacitiveSensor cs_7_50 = CapacitiveSensor(7, 50);
+//CapacitiveSensor cs_7_51 = CapacitiveSensor(7, 51);
+//CapacitiveSensor cs_7_51 = CapacitiveSensor(7, 51);
+//CapacitiveSensor cs_7_52 = CapacitiveSensor(7, 52);
+//CapacitiveSensor cs_8_53 = CapacitiveSensor(8, 53);
+//CapacitiveSensor cs_8_50 = CapacitiveSensor(8, 50);
+//CapacitiveSensor cs_8_51 = CapacitiveSensor(8, 51);
+//CapacitiveSensor cs_8_51 = CapacitiveSensor(8, 51);
 
 // variables
 int ledPin1 =  42; // the number of the LED pin
-int ledPin2 =  38; // the number of the LED pin
-int ledPin3 =  34; // the number of the LED pin
-int ledPin4 =  30; // the number of the LED pin
-int ledPin5 =  13; // the number of the LED pin
-//int potPin = A6; // brightness
-//int potVal = 0; // save the value of potentiometer
-//int potPin2 = A4; // color mode
-//int potVal2 = 0; // save the value of potentiometer
-//int brightness = 0;
-//int colorMode = 0;
+//int ledPin2 =  38; // the number of the LED pin
+//int ledPin3 =  34; // the number of the LED pin
+//int ledPin4 =  30; // the number of the LED pin
+//int ledPin5 =  13; // the number of the LED pin
 
 void setup() {
   pinMode(ledPin1, OUTPUT);
-  pinMode(ledPin2, OUTPUT);
-  pinMode(ledPin3, OUTPUT);
-  pinMode(ledPin4, OUTPUT);
-  pinMode(ledPin5, OUTPUT);
+//  pinMode(ledPin2, OUTPUT);
+//  pinMode(ledPin3, OUTPUT);
+//  pinMode(ledPin4, OUTPUT);
+//  pinMode(ledPin5, OUTPUT);
 
   strip1.begin(); //we always need to do this
   strip1.show(); // Initialize all pixels to 'off'
-  strip2.begin(); //we always need to do this
-  strip2.show(); // Initialize all pixels to 'off'
-  strip3.begin(); //we always need to do this
-  strip3.show(); // Initialize all pixels to 'off'
-  strip4.begin(); //we always need to do this
-  strip4.show(); // Initialize all pixels to 'off'
-//  strip5.begin(); //we always need to do this
+//  strip2.begin(); //we always need to do this
+//  strip2.show(); // Initialize all pixels to 'off'
+//  strip3.begin(); //we always need to do this
+//  strip3.show(); // Initialize all pixels to 'off'
+//  strip4.begin(); //we always need to do this
+//  strip4.show(); // Initialize all pixels to 'off'
+////  strip5.begin(); //we always need to do this
 //  strip5.show(); // Initialize all pixels to 'off'
 
   // put your setup code here, to run once:
@@ -83,97 +77,413 @@ void setup() {
 
 void loop() {
   // sensor stuff cs_commonPin#_touchPin#
-  long capSense1 =  cs_2_52.capacitiveSensor(30); // r1c1
-  long capSense2 =  cs_2_53.capacitiveSensor(30); // r1c2
-  long capSense3 =  cs_2_50.capacitiveSensor(30); // r1c3
-  long capSense4 =  cs_2_51.capacitiveSensor(30); // r1c4
-//  long capSense5 =  cs_2_3.capacitiveSensor(30); // r1c5
-//  long capSense6 =  cs_2_4.capacitiveSensor(30); // r2c1
-//  long capSense7 =  cs_2_5.capacitiveSensor(30); // r2c2
-//  long capSense8 =  cs_2_6.capacitiveSensor(30); // r2c3
-//  long capSense9 =  cs_2_3.capacitiveSensor(30); // r2c4
-//  long capSense10 =  cs_2_4.capacitiveSensor(30); // r2c5
-//  long capSense11 =  cs_2_5.capacitiveSensor(30); // r3c1
-//  long capSense12 =  cs_2_6.capacitiveSensor(30); // r3c2
-//  long capSense13 =  cs_2_3.capacitiveSensor(30); // r3c3
-//  long capSense14 =  cs_2_4.capacitiveSensor(30); // r3c4
-//  long capSense15 =  cs_2_5.capacitiveSensor(30); // r3c5
-//  long capSense16 =  cs_2_6.capacitiveSensor(30); // r4c1
-//  long capSense17 =  cs_2_3.capacitiveSensor(30); // r4c2
-//  long capSense18 =  cs_2_4.capacitiveSensor(30); // r4c3
-//  long capSense19 =  cs_2_5.capacitiveSensor(30); // r4c4
-//  long capSense20 =  cs_2_6.capacitiveSensor(30); // r4c5
-//  long capSense21 =  cs_2_3.capacitiveSensor(30); // r5c1
-//  long capSense22 =  cs_2_4.capacitiveSensor(30); // r5c2
-//  long capSense23 =  cs_2_5.capacitiveSensor(30); // r5c3
-//  long capSense24 =  cs_2_6.capacitiveSensor(30); // r5c4
-//  long capSense25 =  cs_2_6.capacitiveSensor(30); // r5c5
+  long capSense1 =  cs_2_52.capacitiveSensor(30); // r1c5
+  long capSense2 =  cs_2_53.capacitiveSensor(30); // r1c4
+  long capSense3 =  cs_2_50.capacitiveSensor(30); // r2c5
+  long capSense4 =  cs_2_51.capacitiveSensor(30); // r2c4
+  long capSense5 =  cs_3_48.capacitiveSensor(30); // r3c5
+  long capSense6 =  cs_3_49.capacitiveSensor(30); // r3c4
+  long capSense7 =  cs_3_46.capacitiveSensor(30); // r4c5
+  long capSense8 =  cs_3_47.capacitiveSensor(30); // r4c4
+//  long capSense9 =  cs_4_44.capacitiveSensor(30); // r5c5
+//  long capSense10 =  cs_4_45.capacitiveSensor(30); // r5c5
+//  long capSense11 =  cs_4_42.capacitiveSensor(30); // r3c3
+//  long capSense12 =  cs_4_43.capacitiveSensor(30); // r4c3
+//  long capSense13 =  cs_5_40.capacitiveSensor(30); // r5c3
+//  long capSense14 =  cs_6_4.capacitiveSensor(30); // rc
+//  long capSense15 =  cs_6_5.capacitiveSensor(30); // rc
+//  long capSense16 =  cs_6_6.capacitiveSensor(30); // rc
+//  long capSense17 =  cs_6_3.capacitiveSensor(30); // rc
+//  long capSense18 =  cs_7_4.capacitiveSensor(30); // rc
+//  long capSense19 =  cs_7_5.capacitiveSensor(30); // rc
+//  long capSense20 =  cs_7_6.capacitiveSensor(30); // rc
+//  long capSense21 =  cs_7_3.capacitiveSensor(30); // rc
+//  long capSense22 =  cs_8_4.capacitiveSensor(30); // rc
+//  long capSense23 =  cs_8_5.capacitiveSensor(30); // rc
+//  long capSense24 =  cs_8_6.capacitiveSensor(30); // rc
+//  long capSense25 =  cs_8_6.capacitiveSensor(30); // rc
 
   // LED stuff
+  // ROW 1
   if(capSense1 > 100) {
       strip1.setPixelColor(0, 255, 0, 0); //r
+      strip1.setPixelColor(1, 255, 0, 0); //r
+      strip1.setPixelColor(2, 255, 0, 0); //r
       strip1.setBrightness(50);
       strip1.show();
       }
   else {
       // turn LED off:
-      for(uint16_t i=0; i<strip1.numPixels(); i++) {
+      for(uint16_t i=0; i<3; i++) {
           strip1.setPixelColor(i, 0, 0, 0); //off!!!
           strip1.show();
       }
   }
 
   if(capSense2 > 100) {
-      strip2.setPixelColor(0, 0, 255, 0); //g
+      strip1.setPixelColor(3, 0, 255, 0); //g
+      strip1.setPixelColor(4, 0, 255, 0); //g
+      strip1.setPixelColor(5, 0, 255, 0); //g
+      strip1.setBrightness(50);
+      strip1.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=3; i<6; i++) {
+          strip1.setPixelColor(i, 0, 0, 0); //off!!!
+          strip1.show();
+      }
+  }
+
+  if(capSense3 > 100) {
+      strip1.setPixelColor(6, 0, 0, 255); //b
+      strip1.setPixelColor(7, 0, 0, 255); //b
+      strip1.setPixelColor(8, 0, 0, 255); //b
+      strip1.setBrightness(50);
+      strip1.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=6; i<9; i++) {
+          strip1.setPixelColor(i, 0, 0, 0); //off!!!
+          strip1.show();
+      }
+  }
+
+  if(capSense1 > 100) {
+      strip1.setPixelColor(9, 255, 255, 255); //w
+      strip1.setPixelColor(10, 255, 255, 255); //w
+      strip1.setPixelColor(11, 255, 255, 255); //w
+      strip1.setBrightness(50);
+      strip1.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=9; i<12; i++) {
+          strip1.setPixelColor(i, 0, 0, 0); //off!!!
+          strip1.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip1.setPixelColor(12, 255, 255, 255); //w
+      strip1.setPixelColor(13, 255, 255, 255); //w
+      strip1.setPixelColor(14, 255, 255, 255); //w
+      strip1.setBrightness(50);
+      strip1.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=12; i<15; i++) {
+          strip1.setPixelColor(i, 0, 0, 0); //off!!!
+          strip1.show();
+      }
+  }
+
+  // ROW 2
+  if(capSense1 > 100) {
+      strip2.setPixelColor(0, 255, 0, 0); //r
+      strip2.setPixelColor(1, 255, 0, 0); //r
+      strip2.setPixelColor(2, 255, 0, 0); //r
       strip2.setBrightness(50);
       strip2.show();
       }
   else {
       // turn LED off:
-      for(uint16_t i=0; i<strip2.numPixels(); i++) {
+      for(uint16_t i=0; i<3; i++) {
+          strip2.setPixelColor(i, 0, 0, 0); //off!!!
+          strip2.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip2.setPixelColor(3, 0, 255, 0); //g
+      strip2.setPixelColor(4, 0, 255, 0); //g
+      strip2.setPixelColor(5, 0, 255, 0); //g
+      strip2.setBrightness(50);
+      strip2.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=3; i<6; i++) {
           strip2.setPixelColor(i, 0, 0, 0); //off!!!
           strip2.show();
       }
   }
 
   if(capSense3 > 100) {
-      strip3.setPixelColor(0, 0, 0, 255); //b
+      strip2.setPixelColor(6, 0, 0, 255); //b
+      strip2.setPixelColor(7, 0, 0, 255); //b
+      strip2.setPixelColor(8, 0, 0, 255); //b
+      strip2.setBrightness(50);
+      strip2.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=6; i<9; i++) {
+          strip2.setPixelColor(i, 0, 0, 0); //off!!!
+          strip2.show();
+      }
+  }
+
+  if(capSense1 > 100) {
+      strip2.setPixelColor(9, 255, 255, 255); //w
+      strip2.setPixelColor(10, 255, 255, 255); //w
+      strip2.setPixelColor(11, 255, 255, 255); //w
+      strip2.setBrightness(50);
+      strip2.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=9; i<12; i++) {
+          strip2.setPixelColor(i, 0, 0, 0); //off!!!
+          strip2.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip2.setPixelColor(12, 255, 255, 255); //w
+      strip2.setPixelColor(13, 255, 255, 255); //w
+      strip2.setPixelColor(14, 255, 255, 255); //w
+      strip2.setBrightness(50);
+      strip2.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=12; i<15; i++) {
+          strip2.setPixelColor(i, 0, 0, 0); //off!!!
+          strip2.show();
+      }
+  }
+
+  // ROW 3
+  if(capSense1 > 100) {
+      strip3.setPixelColor(0, 255, 0, 0); //r
+      strip3.setPixelColor(1, 255, 0, 0); //r
+      strip3.setPixelColor(2, 255, 0, 0); //r
       strip3.setBrightness(50);
       strip3.show();
       }
   else {
       // turn LED off:
-      for(uint16_t i=0; i<strip3.numPixels(); i++) {
+      for(uint16_t i=0; i<3; i++) {
           strip3.setPixelColor(i, 0, 0, 0); //off!!!
           strip3.show();
       }
   }
 
-  if(capSense4 > 100) {
-      strip4.setPixelColor(0, 255, 255, 255); //w
+  if(capSense2 > 100) {
+      strip3.setPixelColor(3, 0, 255, 0); //g
+      strip3.setPixelColor(4, 0, 255, 0); //g
+      strip3.setPixelColor(5, 0, 255, 0); //g
+      strip3.setBrightness(50);
+      strip3.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=3; i<6; i++) {
+          strip3.setPixelColor(i, 0, 0, 0); //off!!!
+          strip3.show();
+      }
+  }
+
+  if(capSense3 > 100) {
+      strip3.setPixelColor(6, 0, 0, 255); //b
+      strip3.setPixelColor(7, 0, 0, 255); //b
+      strip3.setPixelColor(8, 0, 0, 255); //b
+      strip3.setBrightness(50);
+      strip3.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=6; i<9; i++) {
+          strip3.setPixelColor(i, 0, 0, 0); //off!!!
+          strip3.show();
+      }
+  }
+
+  if(capSense1 > 100) {
+      strip3.setPixelColor(9, 255, 255, 255); //w
+      strip3.setPixelColor(10, 255, 255, 255); //w
+      strip3.setPixelColor(11, 255, 255, 255); //w
+      strip3.setBrightness(50);
+      strip3.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=9; i<12; i++) {
+          strip3.setPixelColor(i, 0, 0, 0); //off!!!
+          strip3.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip3.setPixelColor(12, 255, 255, 255); //w
+      strip3.setPixelColor(13, 255, 255, 255); //w
+      strip3.setPixelColor(14, 255, 255, 255); //w
+      strip3.setBrightness(50);
+      strip3.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=12; i<15; i++) {
+          strip3.setPixelColor(i, 0, 0, 0); //off!!!
+          strip3.show();
+      }
+  }
+
+  // ROW 4
+  if(capSense1 > 100) {
+      strip4.setPixelColor(0, 255, 0, 0); //r
+      strip4.setPixelColor(1, 255, 0, 0); //r
+      strip4.setPixelColor(2, 255, 0, 0); //r
       strip4.setBrightness(50);
       strip4.show();
       }
   else {
       // turn LED off:
-      for(uint16_t i=0; i<strip4.numPixels(); i++) {
+      for(uint16_t i=0; i<3; i++) {
           strip4.setPixelColor(i, 0, 0, 0); //off!!!
           strip4.show();
       }
   }
 
-//  if(capSense5 > 100) {
-//      strip4.setPixelColor(0, 255, 255, 255); //w
-//      strip4.setBrightness(50);
-//      strip4.show();
-//      }
-//  else {
-//      // turn LED off:
-//      for(uint16_t i=0; i<strip4.numPixels(); i++) {
-//          strip4.setPixelColor(i, 0, 0, 0); //off!!!
-//          strip4.show();
-//      }
-//  }
+  if(capSense2 > 100) {
+      strip4.setPixelColor(3, 0, 255, 0); //g
+      strip4.setPixelColor(4, 0, 255, 0); //g
+      strip4.setPixelColor(5, 0, 255, 0); //g
+      strip4.setBrightness(50);
+      strip4.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=3; i<6; i++) {
+          strip4.setPixelColor(i, 0, 0, 0); //off!!!
+          strip4.show();
+      }
+  }
+
+  if(capSense3 > 100) {
+      strip4.setPixelColor(6, 0, 0, 255); //b
+      strip4.setPixelColor(7, 0, 0, 255); //b
+      strip4.setPixelColor(8, 0, 0, 255); //b
+      strip4.setBrightness(50);
+      strip4.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=6; i<9; i++) {
+          strip4.setPixelColor(i, 0, 0, 0); //off!!!
+          strip4.show();
+      }
+  }
+
+  if(capSense1 > 100) {
+      strip4.setPixelColor(9, 255, 255, 255); //w
+      strip4.setPixelColor(10, 255, 255, 255); //w
+      strip4.setPixelColor(11, 255, 255, 255); //w
+      strip4.setBrightness(50);
+      strip4.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=9; i<12; i++) {
+          strip4.setPixelColor(i, 0, 0, 0); //off!!!
+          strip4.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip4.setPixelColor(12, 255, 255, 255); //w
+      strip4.setPixelColor(13, 255, 255, 255); //w
+      strip4.setPixelColor(14, 255, 255, 255); //w
+      strip4.setBrightness(50);
+      strip4.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=12; i<15; i++) {
+          strip4.setPixelColor(i, 0, 0, 0); //off!!!
+          strip4.show();
+      }
+  }
+
+  // ROW 5
+  if(capSense1 > 100) {
+      strip5.setPixelColor(0, 255, 0, 0); //r
+      strip5.setPixelColor(1, 255, 0, 0); //r
+      strip5.setPixelColor(2, 255, 0, 0); //r
+      strip5.setBrightness(50);
+      strip5.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=0; i<3; i++) {
+          strip5.setPixelColor(i, 0, 0, 0); //off!!!
+          strip5.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip5.setPixelColor(3, 0, 255, 0); //g
+      strip5.setPixelColor(4, 0, 255, 0); //g
+      strip5.setPixelColor(5, 0, 255, 0); //g
+      strip5.setBrightness(50);
+      strip5.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=3; i<6; i++) {
+          strip5.setPixelColor(i, 0, 0, 0); //off!!!
+          strip5.show();
+      }
+  }
+
+  if(capSense3 > 100) {
+      strip5.setPixelColor(6, 0, 0, 255); //b
+      strip5.setPixelColor(7, 0, 0, 255); //b
+      strip5.setPixelColor(8, 0, 0, 255); //b
+      strip5.setBrightness(50);
+      strip5.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=6; i<9; i++) {
+          strip5.setPixelColor(i, 0, 0, 0); //off!!!
+          strip5.show();
+      }
+  }
+
+  if(capSense1 > 100) {
+      strip5.setPixelColor(9, 255, 255, 255); //w
+      strip5.setPixelColor(10, 255, 255, 255); //w
+      strip5.setPixelColor(11, 255, 255, 255); //w
+      strip5.setBrightness(50);
+      strip5.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=9; i<12; i++) {
+          strip5.setPixelColor(i, 0, 0, 0); //off!!!
+          strip5.show();
+      }
+  }
+
+  if(capSense2 > 100) {
+      strip5.setPixelColor(12, 255, 255, 255); //w
+      strip5.setPixelColor(13, 255, 255, 255); //w
+      strip5.setPixelColor(14, 255, 255, 255); //w
+      strip5.setBrightness(50);
+      strip5.show();
+      }
+  else {
+      // turn LED off:
+      for(uint16_t i=12; i<15; i++) {
+          strip5.setPixelColor(i, 0, 0, 0); //off!!!
+          strip5.show();
+      }
+  }
+
   // serial monitor code
   Serial.print(capSense1); //print raw sensor value
   Serial.print("    "); //print raw sensor value
@@ -181,15 +491,15 @@ void loop() {
   Serial.print("    "); //print raw sensor value
   Serial.print(capSense3); //print raw sensor value
   Serial.print("    "); //print raw sensor value
-  Serial.println(capSense4); //print raw sensor value
-//  Serial.print("    ");
-//  Serial.print(capSense5);
-//  Serial.print("    ");
-//  Serial.print(capSense6);
-//  Serial.print("    ");
-//  Serial.print(capSense7);
-//  Serial.print("    ");
-//  Serial.print(capSense8);
+  Serial.print(capSense4); //print raw sensor value
+  Serial.print("    ");
+  Serial.print(capSense5);
+  Serial.print("    ");
+  Serial.print(capSense6);
+  Serial.print("    ");
+  Serial.print(capSense7);
+  Serial.print("    ");
+  Serial.println(capSense8);
 //  Serial.print("    ");
 //  Serial.print(capSense9);
 //  Serial.print("    ");
@@ -199,7 +509,7 @@ void loop() {
 //  Serial.print("    ");
 //  Serial.print(capSense12);
 //  Serial.print("    ");
-//  Serial.print(capSense13);
+//  Serial.println(capSense13);
 //  Serial.print("    ");
 //  Serial.print(capSense14);
 //  Serial.print("    ");

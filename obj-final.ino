@@ -106,9 +106,9 @@ void loop() {
   // LED stuff
   // ROW 1
   if(capSense17 > 100) {
-      strip1.setPixelColor(0, 255, 0, 0); //r
-      strip1.setPixelColor(1, 255, 0, 0); //r
-      strip1.setPixelColor(2, 255, 0, 0); //r
+      strip1.setPixelColor(0, 137, 24, 200); //r
+      strip1.setPixelColor(1, 59, 180, 95); //r
+      strip1.setPixelColor(2, 130, 0, 17); //r
       strip1.setBrightness(50);
       strip1.show();
       }
@@ -121,9 +121,9 @@ void loop() {
   }
 
   if(capSense16 > 100) {
-      strip1.setPixelColor(3, 0, 255, 0); //g
+      strip1.setPixelColor(3, 212, 125, 0); //g
       strip1.setPixelColor(4, 0, 255, 0); //g
-      strip1.setPixelColor(5, 0, 255, 0); //g
+      strip1.setPixelColor(5, 255, 255, 0); //g
       strip1.setBrightness(50);
       strip1.show();
       }
@@ -136,9 +136,9 @@ void loop() {
   }
 
   if(capSense15 > 100) {
-      strip1.setPixelColor(6, 0, 0, 255); //b
-      strip1.setPixelColor(7, 0, 0, 255); //b
-      strip1.setPixelColor(8, 0, 0, 255); //b
+      strip1.setPixelColor(6, 72, 72, 72); //b
+      strip1.setPixelColor(7, 5, 5, 5); //b
+      strip1.setPixelColor(8, 25, 25, 25); //b
       strip1.setBrightness(50);
       strip1.show();
       }

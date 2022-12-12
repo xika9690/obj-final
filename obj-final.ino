@@ -6,7 +6,7 @@
 #endif
 
 //define the digital pin that the LED strip is connected to
-#define PIN1 42
+#define PIN1 9
 //#define PIN2 38
 //#define PIN3 34
 //#define PIN4 30
@@ -47,7 +47,7 @@ CapacitiveSensor cs_8_33 = CapacitiveSensor(8, 33);
 CapacitiveSensor cs_8_32 = CapacitiveSensor(8, 32);
 
 // variables
-int ledPin1 =  42; // the number of the LED pin
+int ledPin1 =  9; // the number of the LED pin
 //int ledPin2 =  38; // the number of the LED pin
 //int ledPin3 =  34; // the number of the LED pin
 //int ledPin4 =  30; // the number of the LED pin
@@ -105,7 +105,7 @@ void loop() {
 
   // LED stuff
   // ROW 1
-  if(capSense1 > 100) {
+  if(capSense17 > 100) {
       strip1.setPixelColor(0, 255, 0, 0); //r
       strip1.setPixelColor(1, 255, 0, 0); //r
       strip1.setPixelColor(2, 255, 0, 0); //r
@@ -120,7 +120,7 @@ void loop() {
       }
   }
 
-  if(capSense2 > 100) {
+  if(capSense16 > 100) {
       strip1.setPixelColor(3, 0, 255, 0); //g
       strip1.setPixelColor(4, 0, 255, 0); //g
       strip1.setPixelColor(5, 0, 255, 0); //g
@@ -135,7 +135,7 @@ void loop() {
       }
   }
 
-  if(capSense3 > 100) {
+  if(capSense15 > 100) {
       strip1.setPixelColor(6, 0, 0, 255); //b
       strip1.setPixelColor(7, 0, 0, 255); //b
       strip1.setPixelColor(8, 0, 0, 255); //b
@@ -150,7 +150,7 @@ void loop() {
       }
   }
 
-  if(capSense1 > 100) {
+  if(capSense2 > 100) {
       strip1.setPixelColor(9, 255, 255, 255); //w
       strip1.setPixelColor(10, 255, 255, 255); //w
       strip1.setPixelColor(11, 255, 255, 255); //w
@@ -165,7 +165,7 @@ void loop() {
       }
   }
 
-  if(capSense2 > 100) {
+  if(capSense1 > 100) {
       strip1.setPixelColor(12, 255, 255, 255); //w
       strip1.setPixelColor(13, 255, 255, 255); //w
       strip1.setPixelColor(14, 255, 255, 255); //w

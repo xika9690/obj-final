@@ -236,9 +236,9 @@ void loop() {
   }
 
   if(capSense3 > 250) {
-      strip2.setPixelColor(12, 186, 37, 92); //w
-      strip2.setPixelColor(13, 186, 37, 92); //w
-      strip2.setPixelColor(14, 186, 37, 92); //w
+      strip2.setPixelColor(12, 186, 37, 92);
+      strip2.setPixelColor(13, 186, 37, 92);
+      strip2.setPixelColor(14, 186, 37, 92);
       strip2.setBrightness(50);
       strip2.show();
       }
@@ -252,9 +252,9 @@ void loop() {
 
  // ROW 3
  if(capSense21 > 250) {
-     strip3.setPixelColor(0, 255, 0, 0); //r
-     strip3.setPixelColor(1, 255, 0, 0); //r
-     strip3.setPixelColor(2, 255, 0, 0); //r
+     strip3.setPixelColor(0, 36, 108, 205);
+     strip3.setPixelColor(1, 36, 108, 205);
+     strip3.setPixelColor(2, 36, 108, 205);
      strip3.setBrightness(50);
      strip3.show();
      }
@@ -267,9 +267,9 @@ void loop() {
  }
 
  if(capSense20 > 250) {
-     strip3.setPixelColor(3, 0, 255, 0); //g
-     strip3.setPixelColor(4, 0, 255, 0); //g
-     strip3.setPixelColor(5, 0, 255, 0); //g
+     strip3.setPixelColor(3, 15, 36, 41);
+     strip3.setPixelColor(4, 15, 36, 41);
+     strip3.setPixelColor(5, 15, 36, 41);
      strip3.setBrightness(50);
      strip3.show();
      }
@@ -282,9 +282,9 @@ void loop() {
  }
 
  if(capSense11 > 250) {
-     strip3.setPixelColor(6, 0, 0, 255); //b
-     strip3.setPixelColor(7, 0, 0, 255); //b
-     strip3.setPixelColor(8, 0, 0, 255); //b
+     strip3.setPixelColor(6, 11, 54, 60);
+     strip3.setPixelColor(7, 11, 54, 60);
+     strip3.setPixelColor(8, 11, 54, 60);
      strip3.setBrightness(50);
      strip3.show();
      }
@@ -297,9 +297,9 @@ void loop() {
  }
 
  if(capSense6 > 250) {
-     strip3.setPixelColor(9, 255, 255, 255); //w
-     strip3.setPixelColor(10, 255, 255, 255); //w
-     strip3.setPixelColor(11, 255, 255, 255); //w
+     strip3.setPixelColor(9, 177, 69, 114);
+     strip3.setPixelColor(10, 177, 69, 114);
+     strip3.setPixelColor(11, 177, 69, 114);
      strip3.setBrightness(50);
      strip3.show();
      }
@@ -312,9 +312,9 @@ void loop() {
  }
 
  if(capSense5 > 250) {
-     strip3.setPixelColor(12, 255, 255, 255); //w
-     strip3.setPixelColor(13, 255, 255, 255); //w
-     strip3.setPixelColor(14, 255, 255, 255); //w
+     strip3.setPixelColor(12, 206, 72, 0);
+     strip3.setPixelColor(13, 206, 72, 0);
+     strip3.setPixelColor(14, 206, 72, 0);
      strip3.setBrightness(50);
      strip3.show();
      }
@@ -328,9 +328,9 @@ void loop() {
 
  // ROW 4
  if(capSense23 > 300) {
-     strip4.setPixelColor(0, 255, 0, 0); //r
-     strip4.setPixelColor(1, 255, 0, 0); //r
-     strip4.setPixelColor(2, 255, 0, 0); //r
+     strip4.setPixelColor(0, 187, 9, 83);
+     strip4.setPixelColor(1, 187, 9, 83);
+     strip4.setPixelColor(2, 187, 9, 83);
      strip4.setBrightness(50);
      strip4.show();
      }
@@ -343,9 +343,9 @@ void loop() {
  }
 
  if(capSense22 > 400) {
-     strip4.setPixelColor(3, 0, 255, 0); //g
-     strip4.setPixelColor(4, 0, 255, 0); //g
-     strip4.setPixelColor(5, 0, 255, 0); //g
+     strip4.setPixelColor(3, 197, 234, 8);
+     strip4.setPixelColor(4, 197, 234, 8);
+     strip4.setPixelColor(5, 197, 234, 8);
      strip4.setBrightness(50);
      strip4.show();
      }
@@ -358,9 +358,9 @@ void loop() {
  }
 
  if(capSense12 > 250) {
-     strip4.setPixelColor(6, 0, 0, 255); //b
-     strip4.setPixelColor(7, 0, 0, 255); //b
-     strip4.setPixelColor(8, 0, 0, 255); //b
+     strip4.setPixelColor(6, 73, 197, 255);
+     strip4.setPixelColor(7, 73, 197, 255);
+     strip4.setPixelColor(8, 73, 197, 255);
      strip4.setBrightness(50);
      strip4.show();
      }
@@ -373,9 +373,9 @@ void loop() {
  }
 
  if(capSense8 > 250) {
-     strip4.setPixelColor(9, 255, 255, 255); //w
-     strip4.setPixelColor(10, 255, 255, 255); //w
-     strip4.setPixelColor(11, 255, 255, 255); //w
+     strip4.setPixelColor(9, 255, 255, 255);
+     strip4.setPixelColor(10, 255, 255, 255);
+     strip4.setPixelColor(11, 255, 255, 255);
      strip4.setBrightness(50);
      strip4.show();
      }
@@ -388,9 +388,9 @@ void loop() {
  }
 
  if(capSense7 > 250) {
-     strip4.setPixelColor(12, 255, 255, 255); //w
-     strip4.setPixelColor(13, 255, 255, 255); //w
-     strip4.setPixelColor(14, 255, 255, 255); //w
+     strip4.setPixelColor(12, 0, 0, 255);
+     strip4.setPixelColor(13, 0, 0, 255);
+     strip4.setPixelColor(14, 0, 0, 255);
      strip4.setBrightness(50);
      strip4.show();
      }
@@ -404,9 +404,9 @@ void loop() {
 
  // ROW 5
  if(capSense25 > 250) {
-     strip5.setPixelColor(0, 255, 0, 0); //r
-     strip5.setPixelColor(1, 255, 0, 0); //r
-     strip5.setPixelColor(2, 255, 0, 0); //r
+     strip5.setPixelColor(0, 255, 0, 0);
+     strip5.setPixelColor(1, 255, 0, 0);
+     strip5.setPixelColor(2, 255, 0, 0);
      strip5.setBrightness(50);
      strip5.show();
      }
@@ -419,9 +419,9 @@ void loop() {
  }
 
  if(capSense24 > 250) {
-     strip5.setPixelColor(3, 0, 255, 0); //g
-     strip5.setPixelColor(4, 0, 255, 0); //g
-     strip5.setPixelColor(5, 0, 255, 0); //g
+     strip5.setPixelColor(3, 0, 255, 0);
+     strip5.setPixelColor(4, 0, 255, 0);
+     strip5.setPixelColor(5, 0, 255, 0);
      strip5.setBrightness(50);
      strip5.show();
      }
@@ -434,9 +434,9 @@ void loop() {
  }
 
  if(capSense13 > 250) {
-     strip5.setPixelColor(6, 0, 0, 255); //b
-     strip5.setPixelColor(7, 0, 0, 255); //b
-     strip5.setPixelColor(8, 0, 0, 255); //b
+     strip5.setPixelColor(6, 178, 49, 154);
+     strip5.setPixelColor(7, 178, 49, 154);
+     strip5.setPixelColor(8, 178, 49, 154);
      strip5.setBrightness(50);
      strip5.show();
      }
@@ -449,9 +449,9 @@ void loop() {
  }
 
  if(capSense10 > 250) {
-     strip5.setPixelColor(9, 255, 255, 255); //w
-     strip5.setPixelColor(10, 255, 255, 255); //w
-     strip5.setPixelColor(11, 255, 255, 255); //w
+     strip5.setPixelColor(9, 83, 198, 100);
+     strip5.setPixelColor(10, 83, 198, 100);
+     strip5.setPixelColor(11, 83, 198, 100);
      strip5.setBrightness(50);
      strip5.show();
      }
@@ -464,9 +464,9 @@ void loop() {
  }
 
  if(capSense9 > 250) {
-     strip5.setPixelColor(12, 255, 255, 255); //w
-     strip5.setPixelColor(13, 255, 255, 255); //w
-     strip5.setPixelColor(14, 255, 255, 255); //w
+     strip5.setPixelColor(12, 38, 0, 216);
+     strip5.setPixelColor(13, 38, 0, 216);
+     strip5.setPixelColor(14, 38, 0, 216);
      strip5.setBrightness(50);
      strip5.show();
      }
